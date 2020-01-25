@@ -1,0 +1,12 @@
+
+
+"nycs-og-kafkacluster01.doubleverify.prod:9092,nycs-og-kafkacluster01.doubleverify.prod:9092,nycs-og-kafkacluster01.doubleverify.prod:9092" 
+"http://d-og-schemaregistry.doubleverify.corp:8081" 
+"dv-cls-page-live"
+
+
+"localhost:9092"
+"http://localhost:8081"
+"test1-topic"
+
+

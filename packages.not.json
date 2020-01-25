@@ -1,0 +1,6 @@
+{
+  "avro-schema-registry": "^1.1.0",
+  "avsc": "^5.4.3",
+  "kafka-node": "3.0.1",
+  "request": "2.88.0"
+}

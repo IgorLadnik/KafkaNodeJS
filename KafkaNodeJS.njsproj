@@ -6,7 +6,7 @@
     <ProjectGuid>{887a5624-8ff2-44fc-91e9-2aa9bd81930c}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectView>ShowAllFiles</ProjectView>
-    <StartupFile>kafka-producer.test.js</StartupFile>
+    <StartupFile>kafka-consumer.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
@@ -18,13 +18,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
-    <Content Include="kafka-consumer.test.js" />
-    <Content Include="kafka-producer.test.js" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="packages.not.json" />
     <Content Include="kafka-consumer.js" />
-    <Content Include="kafka-producer.js" />
     <Content Include="utilities.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />

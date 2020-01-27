@@ -10,22 +10,18 @@ const topicName = 'test1-topic';
 const address = utils.getIp();
 
 const topic = {
-    topic:  topicName, //'actor7',
-    offset: 0 //3695
+    topic:  topicName,
+    offset: 0
 };
 
 const version = 11;
 
 const opts = {
-    // groupId: 'dummy-' + new Date().getTime(),
-    groupId: address + '-my-group', //'dummy',
+    groupId: address + '-my-group',
     fromOffset: true
 };
 
-// don't make this go up linter
 (async () => {
-    //const results = [];
-
     // ensure we connect
     await client.once('connect', msg => {
         console.log('connect', { msg });
@@ -39,14 +35,9 @@ const opts = {
     consumer.on('message', async message => {
         const key = await registry.decode(Buffer.from(message.key));
         const value = await registry.decode(Buffer.from(message.value));
-        //results.push({ message, key, value });
 
         console.log(`topic: ${message.topic}  ${key} -> ${value}`);
     });
-
-    //console.log('starting Timer');
-    //setInterval(() => {
-    //    console.log(results), 5 * 1000);
-    //});
 })();
+
 

@@ -18,6 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="kafka-producer.js" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="packages.not.json" />

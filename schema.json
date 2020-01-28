@@ -1,0 +1,13 @@
+{
+	"type":"record",
+	"name":"aa",
+	"namespace":"il.aa",
+	"fields":
+	[
+		{"name":"Id",           "type":"int"},
+		{"name":"Name",         "type":"string"},
+		{"name":"BatchId",      "type":["null", "int"]},
+		{"name":"TextData",     "type":["null", "string"]},
+		{"name":"NumericData",  "type":["null", "long"], "default":null}
+	]
+}

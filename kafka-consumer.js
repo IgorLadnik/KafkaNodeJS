@@ -23,9 +23,7 @@ const opts = {
 
 (async () => {
     // ensure we connect
-    await client.once('connect', msg => {
-        console.log('connect', { msg });
-    });
+    await client.once('connect', msg => console.log('connect', { msg }));
 
     // wire up our stuff
     const consumer = new kafka.Consumer(client, [topic], opts);
